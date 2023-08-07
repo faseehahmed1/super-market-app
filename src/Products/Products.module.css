@@ -1,0 +1,19 @@
+.container{
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.product_layout{
+    padding: 40px 0px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 30px;
+}

@@ -6,8 +6,9 @@
   --white: #fff;
   --black: #010101;
   --green: #2b8379;
-  --green-light: #7fd1c7;
+  --green-light: #19a596;
   --burgundy: #970e3d;
+  --burgundy-light: #c43464;
   --background: #f2ecee;
 }
 
@@ -19,6 +20,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     font: inherit;
 }
 
@@ -26,4 +28,23 @@ body{
   background-color: var(--background);
   width: 100vw;
   height: 100vh;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--black);
+
+}
+
+nav{
+  background-color: var(--white);
+  box-shadow: 0 3px 7px 1px rgba(0,0,0,.07), 0 -3px 7px 1px rgba(0,0,0,.07);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

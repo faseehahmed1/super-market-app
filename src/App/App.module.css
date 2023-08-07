@@ -1,3 +1,24 @@
-.hello{
-    color:var(--secondary-color)
+.logo{
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 20px;
 }
+
+.inactive, .active{
+    color: var(--green);
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.nav_links{
+    padding: 0px 20px 0px 40px;
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active{
+    font-weight: 700;
+}
+

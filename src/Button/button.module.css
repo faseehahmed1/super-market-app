@@ -1,0 +1,21 @@
+.button{
+    padding: 10px 25px;
+    background-color: var(--burgundy);
+    color: var(--white);
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    &:hover{
+        background-color: var(--burgundy-light);
+    }
+}
+
+.button_green{
+    background-color: var(--green);
+    font-size: 14px;
+    &:hover{
+        background-color: var(--green-light);
+    }
+}
