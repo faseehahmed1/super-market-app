@@ -7,10 +7,12 @@ import Products from "../Products/Products";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import { useEffect, useState } from "react";
+import Nutrition from "../Nutrition/Nutrition";
+import Storage from "../Storage/Storage";
+import Details from "../Details/Details";
 
 function App() {
   const [productData, setProductData] = useState(() => JSON.parse(localStorage.getItem("localitems")));
-
   useEffect(() => {
     if (localStorage.getItem("localitems")) return;
     (async () => {
@@ -83,7 +85,11 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/products" element={<Products productData={productData} setProductData={setProductData}/>} />
         <Route path="/cart" element={<Cart productData={productData} />} />
-        <Route path="/products/:id" element={<Product />} />
+        <Route path="/products/:id" element={<Product productData={productData} setProductData={setProductData}/>} >
+        <Route path="" element={<Details/>}></Route>
+            <Route path="nutrition" element={<Nutrition/>}></Route>
+            <Route path="storage" element={<Storage/>}></Route>
+        </Route>
       </Routes>
     </>
   );
